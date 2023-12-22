@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  imapsync:
+    image: centos:centos7.9.2009
+    command: bash -c "yum update -y && yum upgrade -y && yum install epel-release -y && yum install imapsync -y && tail -f /dev/null"
